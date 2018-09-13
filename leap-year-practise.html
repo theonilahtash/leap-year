@@ -2,7 +2,7 @@
 <head>
 	<title>Leap Year in JavaScript</title>
 	<style type="text/css">
-  * {margin: 0 auto; width: 900px; background-color: salmon; }
+	* {margin: 0 auto; width: 900px; background-color: salmon; }
  #text_where {
    color: green;
    font-weight: bold;
@@ -39,36 +39,29 @@
    border: 3px solid black;
    background-color: maroon;
  }
+
   	</style>
 	<script type="text/javascript">
 		var $ = function(id) { return document.getElementById(id); }
 		function leap_year() {
 			var year = $("year");
-			var ans;
+			var result;
 			var leap = year.value % 4 == 0 && year % 100 != 0 || year % 400 == 0
 			if (leap == true)
-				ans = year.value + " is a leap year!";
+				result = year.value + " is a leap year!";
 			else
-				ans = year.value + " is not a leap year!";
-			$("text_where").innerHTML = ans;
-		}
-		function timeInterval() {
-			setInterval("displayTime()", 1000);
-		}
-		function displayTime() {
-			var time = new Date();
-			var tm = time.toLocaleTimeString();
-			var str = "The current time is: " + tm;
-			$("time_output").innerHTML = str;
+				result = year.value + " is not a leap year!";
+			$("text_where").innerHTML = result;
 		}
 	</script>
 </head>
-<body onload="javascript:timeInterval();">
+<body onload="javascript;">
 	<div id="time_output"></div>
 		<div id="get_year">
-			Which year would you like to check for leap? <br />
+			LEAP YEAR DETECTOR <br />
+      Enter a year and find out if its a leap year
 			<input type="text" id="year" name="year" />
-			<input type="button" id="submit" value="Submit" onclick="leap_year();" />
+			<input type="button" id="Find out" value="Find out" onclick="leap_year();" />
 		</div>
 		<div id="text_where"></div>
 </body>
