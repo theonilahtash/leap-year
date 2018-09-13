@@ -1,0 +1,37 @@
+ * {margin: 0 auto; width: 900px; background-color: salmon; }
+#text_where {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 30px;
+}
+#time_output {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 160px;
+}
+#get_year {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: blue;
+}
+#year {
+  font-size: 40px;
+  color: red;
+  width: 100px;
+  text-align: center;
+  margin-top: 30px;
+  border: 3px solid black;
+}
+#submit {
+  width: 260px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  border: 3px solid black;
+  background-color: maroon;
+}
